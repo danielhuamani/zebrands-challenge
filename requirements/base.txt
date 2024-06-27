@@ -1,4 +1,5 @@
 Django==5
+django-uuslug==2.0.0
 psycopg2-binary==2.9.7
 python-slugify==8.0.1
 django-filter==23.3
