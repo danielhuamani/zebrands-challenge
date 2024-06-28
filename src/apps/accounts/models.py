@@ -8,10 +8,6 @@ from apps.accounts.managers import UserManager
 
 
 class User(AbstractBaseUser, PermissionsMixin, CoreTimeModel, CoreRemovedModel):
-    class TypeUserChoices(models.TextChoices):
-        ADMIN = 'Admin'
-        CUSTOMER = 'Customer'
-
     email = models.EmailField(
         verbose_name='email address',
         max_length=255,

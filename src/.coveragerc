@@ -1,0 +1,4 @@
+[run]
+omit = 
+    src/apps/*/migrations/**
+    src/tests/**

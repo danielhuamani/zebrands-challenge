@@ -56,11 +56,17 @@ class CoreRemovedModel(models.Model):
     is_removed = models.BooleanField(default=False)
     remove_objects = RemovedManager()
     active_remove_objects = ActiveRemovedManager()
+    objects = models.Manager()
 
     class Meta:
         verbose_name = "Delete Model"
         verbose_name_plural = "Delete Models"
         abstract = True
+
+    def delete(self, *args, **kwargs):
+        """protects data deletion"""
+        self.is_removed = True
+        self.save()
 
     def __str__(self):
         pass
