@@ -1,14 +1,14 @@
 # Zebrands challenge
 
+## Description
+
+project that provides a product and user management solution
+
 ## Requirements
 
 requirements to execute the project:
 
 - `docker`
-
-## Description
-
-project that provides a product and user management solution
 
 ## Project installation
 ===============
